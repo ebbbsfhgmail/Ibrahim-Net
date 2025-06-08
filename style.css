@@ -1,0 +1,169 @@
+/* التصميم الأساسي */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8fa;
+    color: #14171a;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* التصميم للشريط العلوي */
+.app-header {
+    background-color: #1da1f2;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* تصميم قسم تسجيل الدخول */
+.login-section, .register-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.login-section input, .register-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-section button, .register-section button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #657786;
+}
+
+/* تصميم التغريدات */
+.feed-section {
+    padding-bottom: 60px;
+}
+
+.tweet-box {
+    padding: 10px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.tweet-box textarea {
+    width: 100%;
+    border: 1px solid #e6ecf0;
+    border-radius: 4px;
+    padding: 10px;
+    resize: none;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.tweet-box button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    float: left;
+}
+
+.tweet {
+    padding: 15px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.tweet-user {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.tweet-username {
+    color: #657786;
+    font-size: 14px;
+}
+
+.tweet-content {
+    margin: 10px 0;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    color: #657786;
+    font-size: 14px;
+}
+
+/* القائمة السفلية */
+.app-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #e6ecf0;
+}
+
+.app-nav button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #657786;
+}
+
+/* أقسام أخرى */
+.explore-section, .notifications-section, .messages-section, .profile-section {
+    padding: 20px;
+    display: none;
+}
+
+/* التجاوب مع أحجام الشاشات */
+@media (max-width: 600px) {
+    .app-container {
+        width: 100%;
+    }
+  }
