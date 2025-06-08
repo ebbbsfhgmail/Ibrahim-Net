@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إبرام - منصة التواصل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- شريط التصفح -->
+        <header class="app-header">
+            <h1>إبرام</h1>
+            <button class="menu-btn">☰</button>
+        </header>
+
+        <!-- محتوى الصفحة -->
+        <main class="app-main">
+            <section class="login-section" id="loginSection">
+                <h2>تسجيل الدخول</h2>
+                <input type="text" placeholder="اسم المستخدم" id="username">
+                <input type="password" placeholder="كلمة المرور" id="password">
+                <button onclick="login()">دخول</button>
+                <p class="small-text">ليس لديك حساب؟ <a href="#" onclick="showRegister()">سجل الآن</a></p>
+            </section>
+
+            <section class="feed-section" id="feedSection" style="display:none">
+                <div class="tweet-box">
+                    <textarea placeholder="ماذا يحدث؟"></textarea>
+                    <button>نشر</button>
+                </div>
+                <div class="tweets">
+                    <!-- التغريدات تظهر هنا -->
+                </div>
+            </section>
+        </main>
+
+        <!-- قائمة التصفح السفلية -->
+        <nav class="app-nav" id="appNav" style="display:none">
+            <button onclick="showSection('feed')">🏠 الرئيسية</button>
+            <button onclick="showSection('explore')">🔍 اكتشف</button>
+            <button onclick="showSection('notifications')">🔔 الإشعارات</button>
+            <button onclick="showSection('messages')">✉️ الرسائل</button>
+            <button onclick="showSection('profile')">👤 الملف الشخصي</button>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+          </html>
